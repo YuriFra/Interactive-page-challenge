@@ -12,19 +12,19 @@
     <title>Hiking @ Kalmthoutse Heide</title>
 </head>
 <body>
-<!-- Carousel -->
-<header class="container" id="top">
-    <section class="banner my-4">
+<!-- Header -->
+<header class="m-0 p-0" id="top">
+    <div class="banner ml-4 my-4">
         <img src="img/logo.jpg" alt="logo">
-    </section>
-    <section class="carousel">
+    </div>
+    <!-- Carousel -->
+    <div class="container-fluid m-0 p-0">
         <img class="picture d-block w-100" src="img/heide4.jpg" alt="heide1">
         <img class="picture d-block w-100" src="img/heide1a.jpeg" alt="heide2">
         <img class="picture d-block w-100" src="img/heide2.jpg" alt="heide3">
-        <button type="button" class="navigate border-0 float-left" id="prev" role="button">&#8882;</button>
-        <button type="button" class="navigate border-0 float-right" id="next" role="button">&#8883;</button>
-    </section>
-
+        <button type="button" class="navigate border-0 float-left" id="prev">&#8882;</button>
+        <button type="button" class="navigate border-0 float-right" id="next">&#8883;</button>
+    </div>
 </header>
 
 <!-- Main -->
@@ -34,23 +34,25 @@
         <h1 class="text-success my-4">Guided nature walk - June 20th 2020 - 2pm</h1>
         <nav class="subnav">
             <button class="subnavBtn active-btn btn-success btn-lg border-0 rounded-top mr-2" data-tab="1" role="button">Info</button>
-            <button class="subnavBtn btn-sucess btn-lg border-0 mr-2" data-tab="2" role="button">Practical</button>
-            <button class="subnavBtn btn-sucess btn-lg border-0" data-tab="3" role="button">Contact</button>
+            <button class="subnavBtn btn-sucess btn-lg border-0 mr-2" data-tab="2">Practical</button>
+            <button class="subnavBtn btn-sucess btn-lg border-0" data-tab="3">Contact</button>
 
             <div class="subnavDiv border border-success p-4 mt-4 active" data-tab="1">
 
-                <h4 class="text-success">Border Park Kalmthoutse Heide</h4>
+                <h3 class="text-success">Border Park Kalmthoutse Heide</h3>
                 <p>The Kalmthoutse Heide is a beautifull protected nature area, interesting in every season of the year. It is one of the oldest and biggest in Flanders. Come and check out the beautifull colors, animals and plants. It is an official silence area and ideal for a day hike.</p>
-                <h4 class="text-success">The walk</h4>
+                <br>
+                <h3 class="text-success">The walk</h3>
                 <p>Our guide Hilde will take you on a walk through the park where you will discover the animals that live there and learn a lot about the parks ecosystem.</p>
                 <p>For enrolling for the walk, please fill in the contact form.</p>
+                <br>
                 <img class="img-fluid mx-auto d-block rounded" src="img/heide7.jpg" alt="heide">
             </div>
             <div class="subnavDiv border border-success p-4 mt-4" data-tab="2">
                 <img class="img float-right" src="img/plan.png" alt="plan">
-                <h4 class="text-success">Date</h4>
+                <h3 class="text-success">Date</h3>
                 <p> June 20th 2020 - 2pm</p>
-                <h4 class="text-success">Location</h4>
+                <h3 class="text-success">Location</h3>
                 <p>The location of the start of the walk:</p>
                 <address>
                     De Vroente
@@ -58,9 +60,9 @@
                     2920 Kalmthout<br>
                     Belgium
                 </address>
-                <h4 class="text-success">Email</h4>
+                <h3 class="text-success">Email</h3>
                 <p>info@grenspark.be</p>
-                <h4 class="text-success">Phone number</h4>
+                <h3 class="text-success">Phone number</h3>
                 <p>+32 3 667 64 98</p>
             </div>
             <div class="subnavDiv border border-success p-4 mt-4" data-tab="3">
@@ -77,7 +79,7 @@
                         <label for="message" class="text-success">Message</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Type your message or question here"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success" role="button">Send</button>
+                    <button type="submit" class="btn btn-success">Send</button>
                 </form>
             </div>
         </nav>
@@ -87,15 +89,11 @@
     <!-- Article 2 -->
     <article class="numbers">
         <h1 class="text-success my-4">Fun facts</h1>
-        <div>
-            <h5 class="my-3" id="nr1">The park has a surface of 3750 hectares.</h5>
-        </div>
-        <div>
-            <h5 class="my-3" id="nr2">It takes a total of 175.000 steps to walk all the trails.</h5>
-        </div>
-        <div>
-            <h5 class="my-3" id="nr3">There live 5 differtent species of reptiles and amphibians in the park. Do you know which ones?</h5>
-        </div>
+        <ul>
+            <li class="my-3">The park has a surface of <span class="number px-2" id="nr1"> 3750 </span> hectares.</li>
+            <li class="my-3">It takes a total of <span class="number px-2" id="nr2"> 175.000 </span> steps to walk all the trails.</li>
+            <li class="my-3">There live <span class="number px-2" id="nr3"> 5 </span> different species of reptiles and amphibians in the park. Do you know which ones?</li>
+        </ul>
     </article>
 </main>
 
