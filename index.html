@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hiking @ Kalmthoutse Heide</title>
+</head>
+<body>
+<!-- Carousel -->
+<header class="container">
+    <img src="img/..." alt="heide1">
+    <img src="img/..." alt="heide2">
+    <img src="img/..." alt="heide3">
+    <button type="button" class="navigate" id="prev"></button>
+    <button type="button" class="navigate" id="next"></button>
+</header>
+
+<!-- 2 Articles -->
+<main class="container w-80">
+    <article class="tabs">
+        <nav class="subnav">
+            <button class="subnavBtn active-btn btn-success" data-tab="1">Intro</button>
+            <button class="subnavBtn btn-sucess" data-tab="2">Practical</button>
+            <button class="subnavBtn btn-sucess" data-tab="3">Contact</button>
+
+            <div class="subnavDiv active" data-tab="1">
+                <h5>Border Park Kalmthoutse Heide</h5>
+                <p>The Kalmthoutse Heide is a beautifull protected nature area, interesting in every season of the year. It is one of the oldest and biggest in Flanders. Come and check out the beautifull colors, animals and plants. It is an official silence area and ideal for a day hike.</p>
+            </div>
+            <div class="subnavDiv" data-tab="2">
+                <h5>Adress</h5>
+                <address>
+                    Putsesteenweg 129<br>
+                    2920 Kalmthout<br>
+                    Belgium
+                </address>
+                <h5>Email</h5>
+                <p>info@grenspark.be</p>
+                <h5>Phone number</h5>
+                <p>+32 3 667 64 98</p>
+            </div>
+            <div class="subnavDiv" data-tab="3">
+                <form>
+                    <div class="form-group">
+                        <label for="fullname">Name</label>
+                        <input type="email" class="form-control" id="fullname" placeholder="your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailadress">Email address</label>
+                        <input type="email" class="form-control" id="emailadress" placeholder="your emailadress">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Type your message or question here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Send</button>
+                </form>
+            </div>
+        </nav>
+    </article>
+
+    <hr class="my-3">
+
+    <article class="numbers">
+        <div class="steps">
+            <h5>Total length of the trails: km</h5>
+        </div>
+        <div class="visitors">
+            <h5>Number of visitors: x</h5>
+        </div>
+        <div class="cows">
+            <h5>Number of animals: x</h5>
+        </div>
+    </article>
+
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
