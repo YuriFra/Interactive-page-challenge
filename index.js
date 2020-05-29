@@ -1,23 +1,28 @@
 let slideIndex = 1;
 
-const navigate = document.querySelectorAll(".navigate");
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
 
-navigate.forEach(node => node.addEventListener('click', navigateSlider));
+slideIndex = 1;
+showDivs(slideIndex);
 
-function navigateSlider() {
-	if (navigate.id === "prev") {
-		slideIndex -= 1;
-		console.log(navigate.id);
-	}
-	if (navigate.id === "next") {
-		slideIndex += 1;
-	}
+prev.addEventListener('click', prevSlide);
+next.addEventListener('click', nextSlide)
+
+function prevSlide() {
+	slideIndex -= 1
+	showDivs(slideIndex);
+}
+
+function nextSlide() {
+	slideIndex += 1
 	showDivs(slideIndex);
 }
 
 function showDivs(n) {
   let i;
   let x = document.querySelectorAll(".picture");
+
   if (slideIndex > x.length) {
   	slideIndex = 1
   }
@@ -28,7 +33,11 @@ function showDivs(n) {
     x[i].classList.add('d-none');
     x[i].classList.remove('d-block');
   }
-  x[slideIndex - 1].style.display = "block";
+
+  x[slideIndex - 1].classList.add('d-block');
+  x[slideIndex - 1].classList.remove('d-none');
+
+
   console.log(slideIndex);
 }
 
