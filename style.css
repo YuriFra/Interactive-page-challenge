@@ -4,14 +4,20 @@ body {
 header {
     overflow: hidden;
 }
-
 #prev, #next {
     transform: translateY(-50%);
-    color: white;
+    color: darkgoldenrod;
     font-size: 3rem;
 }
+#next {
+    float: right;
+}
 #prev:hover, #next:hover {
-    color:darkgoldenrod;
+    color:green;
+}
+#prev:active, #next:active {
+    color:darkcyan;
+    outline: none;
 }
 
 .subnavDiv {
