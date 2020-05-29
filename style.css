@@ -1,0 +1,28 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    overflow: hidden;
+}
+
+#prev, #next {
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+}
+#prev:hover, #next:hover {
+    color:green;
+}
+#prev {
+    left: 30px;
+}
+#next {
+    right: 30px;
+}
+
+.subnavDiv {
+    display: none;
+}
+.active {
+    display: block;
+}

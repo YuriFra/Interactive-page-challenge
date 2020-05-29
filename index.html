@@ -6,79 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Hiking @ Kalmthoutse Heide</title>
 </head>
 <body>
 <!-- Carousel -->
-<header class="container">
-    <img src="img/..." alt="heide1">
-    <img src="img/..." alt="heide2">
-    <img src="img/..." alt="heide3">
-    <button type="button" class="navigate" id="prev"></button>
-    <button type="button" class="navigate" id="next"></button>
+<header class="container" id="top">
+    <section class="banner my-4">
+        <img src="img/logo.jpg" alt="logo">
+    </section>
+    <section class="carousel">
+        <img class="picture d-block w-100" src="img/heide4.jpg" alt="heide1">
+        <img class="picture d-block w-100" src="img/heide1a.jpeg" alt="heide2">
+        <img class="picture d-block w-100" src="img/heide2.jpg" alt="heide3">
+        <button type="button" class="navigate border-0 float-left" id="prev" role="button">&#8882;</button>
+        <button type="button" class="navigate border-0 float-right" id="next" role="button">&#8883;</button>
+    </section>
+
 </header>
 
-<!-- 2 Articles -->
-<main class="container w-80">
+<!-- Main -->
+<main class="container w-80 mt-5">
+    <!-- Article 1 -->
     <article class="tabs">
+        <h1 class="text-success my-4">Guided nature walk - June 20th 2020 - 2pm</h1>
         <nav class="subnav">
-            <button class="subnavBtn active-btn btn-success" data-tab="1">Intro</button>
-            <button class="subnavBtn btn-sucess" data-tab="2">Practical</button>
-            <button class="subnavBtn btn-sucess" data-tab="3">Contact</button>
+            <button class="subnavBtn active-btn btn-success btn-lg border-0 rounded-top mr-2" data-tab="1" role="button">Info</button>
+            <button class="subnavBtn btn-sucess btn-lg border-0 mr-2" data-tab="2" role="button">Practical</button>
+            <button class="subnavBtn btn-sucess btn-lg border-0" data-tab="3" role="button">Contact</button>
 
-            <div class="subnavDiv active" data-tab="1">
-                <h5>Border Park Kalmthoutse Heide</h5>
+            <div class="subnavDiv border border-success p-4 mt-4 active" data-tab="1">
+
+                <h4 class="text-success">Border Park Kalmthoutse Heide</h4>
                 <p>The Kalmthoutse Heide is a beautifull protected nature area, interesting in every season of the year. It is one of the oldest and biggest in Flanders. Come and check out the beautifull colors, animals and plants. It is an official silence area and ideal for a day hike.</p>
+                <h4 class="text-success">The walk</h4>
+                <p>Our guide Hilde will take you on a walk through the park where you will discover the animals that live there and learn a lot about the parks ecosystem.</p>
+                <p>For enrolling for the walk, please fill in the contact form.</p>
+                <img class="img-fluid mx-auto d-block rounded" src="img/heide7.jpg" alt="heide">
             </div>
-            <div class="subnavDiv" data-tab="2">
-                <h5>Adress</h5>
+            <div class="subnavDiv border border-success p-4 mt-4" data-tab="2">
+                <img class="img float-right" src="img/plan.png" alt="plan">
+                <h4 class="text-success">Date</h4>
+                <p> June 20th 2020 - 2pm</p>
+                <h4 class="text-success">Location</h4>
+                <p>The location of the start of the walk:</p>
                 <address>
+                    De Vroente
                     Putsesteenweg 129<br>
                     2920 Kalmthout<br>
                     Belgium
                 </address>
-                <h5>Email</h5>
+                <h4 class="text-success">Email</h4>
                 <p>info@grenspark.be</p>
-                <h5>Phone number</h5>
+                <h4 class="text-success">Phone number</h4>
                 <p>+32 3 667 64 98</p>
             </div>
-            <div class="subnavDiv" data-tab="3">
+            <div class="subnavDiv border border-success p-4 mt-4" data-tab="3">
                 <form>
                     <div class="form-group">
-                        <label for="fullname">Name</label>
+                        <label for="fullname" class="text-success">Name</label>
                         <input type="email" class="form-control" id="fullname" placeholder="your name">
                     </div>
                     <div class="form-group">
-                        <label for="emailadress">Email address</label>
+                        <label for="emailadress" class="text-success">Email address</label>
                         <input type="email" class="form-control" id="emailadress" placeholder="your emailadress">
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message" class="text-success">Message</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Type your message or question here"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success">Send</button>
+                    <button type="submit" class="btn btn-success" role="button">Send</button>
                 </form>
             </div>
         </nav>
     </article>
 
-    <hr class="my-3">
-
+    <hr class="my-5">
+    <!-- Article 2 -->
     <article class="numbers">
-        <div class="steps">
-            <h5>Total length of the trails: km</h5>
+        <h1 class="text-success my-4">Fun facts</h1>
+        <div>
+            <h5 class="my-3" id="nr1">The park has a surface of 3750 hectares.</h5>
         </div>
-        <div class="visitors">
-            <h5>Number of visitors: x</h5>
+        <div>
+            <h5 class="my-3" id="nr2">It takes a total of 175.000 steps to walk all the trails.</h5>
         </div>
-        <div class="cows">
-            <h5>Number of animals: x</h5>
+        <div>
+            <h5 class="my-3" id="nr3">There live 5 differtent species of reptiles and amphibians in the park. Do you know which ones?</h5>
         </div>
     </article>
-
 </main>
+
+<!-- Footer -->
+<footer class="container w-80 mb-5">
+    <hr class="my-4">
+    <a class="text-success float-right" role="button" href="#top">Back to top</a>
+    <p class="text-success">2020 &copy; Grenspark Kalmthoutse Heide</p>
+</footer>
 
 <script src="index.js"></script>
 </body>
