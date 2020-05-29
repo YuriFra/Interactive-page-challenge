@@ -65,7 +65,7 @@ textarea = document.querySelectorAll('textarea');
 
 /*nr1 nr2 nr3*/
 
-function animateValue(id, end, lapse) {
+function animateValue(id, end, lapse, increment) {
 	let start = 1;
     let current = start;
     const obj = document.getElementById(id);
@@ -77,6 +77,6 @@ function animateValue(id, end, lapse) {
     }, lapse);
 }
 
-animateValue("nr1", 3750, 1);
-animateValue("nr2", 175000 , 0.00001);
+animateValue("nr1", 38, 100);
+animateValue("nr2", 113, 50);
 animateValue("nr3", 5, 1000);
