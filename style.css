@@ -8,16 +8,10 @@ header {
 #prev, #next {
     transform: translateY(-50%);
     color: white;
-    font-size: 3em;
+    font-size: 3rem;
 }
 #prev:hover, #next:hover {
-    color:green;
-}
-#prev {
-    left: 30px;
-}
-#next {
-    right: 30px;
+    color:darkgoldenrod;
 }
 
 .subnavDiv {
@@ -25,4 +19,22 @@ header {
 }
 .active {
     display: block;
+}
+.number {
+    color: darkgoldenrod;
+    font-size: 2rem;
+}
+@media only screen and (max-width: 300px) {
+
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .number {
+        font-size: 1.7rem;
+    }
 }
