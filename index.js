@@ -65,19 +65,18 @@ textarea = document.querySelectorAll('textarea');
 
 /*nr1 nr2 nr3*/
 
-function animateValue(id) {
+function animateValue(id, end, lapse) {
 	let start = 1;
     let current = start;
     const obj = document.getElementById(id);
-    end = 100;
     const timer = setInterval(function() {
         obj.innerHTML = current++;
-        if (current == end) {
+        if (current == end + 1) {
             clearInterval(timer);
         }
-    }, 5);
+    }, lapse);
 }
 
-animateValue("nr1");
-animateValue("nr2");
-animateValue("nr3");
+animateValue("nr1", 3750, 1);
+animateValue("nr2", 175, 5);
+animateValue("nr3", 5, 1000);
