@@ -78,5 +78,5 @@ function animateValue(id, end, lapse) {
 }
 
 animateValue("nr1", 3750, 1);
-animateValue("nr2", 175, 5);
+animateValue("nr2", 175000 , 0.00001);
 animateValue("nr3", 5, 1000);
